@@ -1,0 +1,450 @@
+/* General Styling*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+}
+
+#mainPage {
+    background: rgb(195, 141, 245);
+    margin: 0 auto;
+    font-family: "Covered By Your Grace", cursive, sans-serif;
+    font-weight: 200;
+    text-align: center;
+    font-size: 35px;
+    width: 100vw;
+    max-width: 100%;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+/*Styles for Rules Page*/
+#rules {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    background-color: rgb(195, 141, 245);
+    display: none;
+    top: 0;
+    left: 0;
+}
+
+#rules h1 {
+    width: 100%;
+}
+
+ol {
+    font-size: 0.6em;
+    text-align: left;
+    padding-left: 2rem;
+    margin: 0.5rem auto;
+}
+
+#quizBegin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+
+}
+
+/* Begin Quiz Button on Instruction page*/
+#rulesOk {
+    width: 150px;
+    padding: 8px;
+    border-radius: 5px;
+    background: #000000;
+    color: #ffffff;
+    border: 2px solid #ffff00;
+    font-family: 'Covered By Your Grace', sans-serif;
+    font-size: .75em;
+    margin: 1rem auto;
+    cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='36' height='43' viewport='0 0 100 100' style='fill:black;font-size:22px;'><text y='50%'>☕</text></svg>") 16 0, auto;
+    /*!emojicursor.app*/
+}
+
+
+/*Keep footer at the bottom*/
+main {
+    flex: 1 0 auto;
+}
+
+/*Styling for the Main Heading*/
+h1 {
+    text-align: center;
+    color: #ffffff;
+    background-color: #000000;
+    width: 100%;
+    font-size: 0.75em;
+    margin: 0 auto;
+    line-height: 2.5rem;
+}
+
+h2 {
+    font-size: 0.75em;
+    margin: 0.5rem auto;
+}
+
+p {
+    font-size: 0.6em;
+    display: flex;
+    margin: 0.5rem auto;
+    justify-content: center;
+    border: 5px solid #ffd700;
+    background: #00ffffcc;
+}
+
+#quizBegin p {
+    font-size: 0.55em;
+    margin: 0.5rem auto;
+    justify-content: center;
+    border: none;
+    background: #ffd700c7;
+    width: 100%;
+}
+
+/*Styling for the mid dots in Friends Logo*/
+.red-dot {
+    color: #ff0000;
+}
+
+.gold-dot {
+    color: #ffd700;
+}
+
+.aqua-dot {
+    color: #00ffff;
+}
+
+/* Styling for the Questions background Image*/
+.question-container {
+    width: 100%;
+    margin: 7px auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 524px;
+}
+
+#question-frame {
+    width: 98%;
+    height: 416px;
+}
+
+/* Styling for the frame question box */
+.quest-box h3 {
+    width: 60%;
+    margin: 5px auto;
+    font-size: 19px;
+    font-weight: 200;
+    position: absolute;
+    top: 21.2rem;
+    left: 3.2rem;
+}
+
+.quest-box {
+    margin-bottom: 10px;
+    /* justify-content: center;
+    display: flex; */
+    height: 0;
+}
+
+/* Styling for the Answer buttons */
+.answer-buttons {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    width: 75%;
+    bottom: 216px;
+}
+
+.ans-btn {
+    border: 2px solid black;
+    background: #ffff00ad;
+    font-weight: 300;
+    width: 80%;
+    border-radius: 5px;
+    padding: 0;
+    transition: all 0.2s;
+    margin: 2px;
+    font-family: 'Covered By Your Grace', sans-serif;
+    font-size: .5em;
+    /* Cursor style emoji fromEmoji Cursor app*/
+    cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='36' height='43' viewport='0 0 100 100' style='fill:black;font-size:22px;'><text y='50%'>☕</text></svg>") 16 0, auto;
+    /*!emojicursor.app*/
+}
+
+.ans-btn:hover {
+    background-color: #c38df5;
+}
+
+.correct {
+    background-color: #008000;
+}
+
+.incorrect {
+    background-color: #ff0000;
+}
+
+/* Next Button*/
+.next-btn {
+    position: absolute;
+    top: 678px;
+    display: flex;
+    margin: 0 auto;
+    left: 25%;
+}
+
+#submit {
+    width: 8rem;
+    padding: 0.75rem;
+    border-radius: 5px;
+    background: #000000;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    left: 33%;
+    border: 2px solid #ffff00;
+    font-family: 'Covered By Your Grace', sans-serif;
+    font-size: .5em;
+    cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='36' height='43' viewport='0 0 100 100' style='fill:black;font-size:22px;'><text y='50%'>☕</text></svg>") 16 0, auto;
+    /*!emojicursor.app*/
+
+}
+
+#results {
+    justify-content: center;
+    font-size: 25px;
+    width: 100%;
+    border: 2px solid #000000;
+    background: #ffff00c9;
+}
+
+figcaption {
+    font-size: 20px;
+}
+
+#themeTune {
+    margin-top: 10px;
+
+}
+
+audio {
+    height: 25px;
+    width: 100%;
+    margin: 5px;
+}
+
+#numScore {
+    font-size: 1em;
+}
+
+footer {
+    font-size: 15px;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    color: #ffffff;
+    background: #000000;
+    line-height: 2em;
+    width: 100%;
+}
+
+
+/*Media Queries*/
+
+/*For phones 280px and up*/
+@media screen and (min-width: 280px) {
+
+    .quest-box h3 {
+        width: 59%;
+        top: 21.2rem;
+        left: 3.55rem;
+    }
+}
+
+@media screen and (min-width: 293px) {
+    .quest-box h3 {
+        top: 19.2rem;
+    }
+
+    .next-btn {
+        top: 614px;
+        left: 29%;
+    }
+}
+
+@media screen and (min-width: 300px) {
+    .quest-box h3 {
+        top: 274px;
+        left: 64px;
+    }
+}
+
+@media screen and (min-width: 330px) {
+    .next-btn {
+        top: 630px;
+        left: 33%;
+    }
+
+    .quest-box h3 {
+        top: 276px;
+        left: 71px;
+    }
+}
+
+@media screen and (min-width: 400px) {
+    .quest-box h3 {
+        top: 276px;
+        left: 84px;
+    }
+}
+
+/*For larger phones and landscape mode (540px and up)*/
+
+@media screen and (min-width: 540px) {
+
+    p {
+        margin-left: 60px;
+        font-size: 32px;
+    }
+
+    h2 {
+        margin-left: 60px;
+        font-size: 38px;
+    }
+
+    #question-frame {
+        width: 90%;
+    }
+
+    #submit {
+        left: 50%;
+        font-size: 35px;
+    }
+
+    .ans-btn {
+        width: 80%;
+        font-size: 25px;
+    }
+
+
+    #quiz-begin p {
+        font-size: 35px;
+    }
+
+    .answer-buttons {
+        padding-bottom: 100px;
+        display: flex;
+        flex-wrap: nowrap;
+        bottom: 252px;
+        left: 32px;
+        width: 59%;
+    }
+    .next-btn {
+        top: 686px;
+        left: 38%;
+    }
+
+.quest-box h3 {
+    top: 335px;
+    left: 108px;
+    font-size: 1.5rem;
+}
+
+#results {
+    font-size: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+}
+
+#numScore {
+    font-size: 30px;
+}
+
+figcaption {
+    font-size: 35px;
+}
+
+audio {
+    height: 25px;
+    width: 100%;
+    margin: 5px auto;
+    width: 100%;
+}
+
+}
+
+
+
+/*For tablets and larger screens(768px and up)*/
+/* @media screen and (min-width: 768px) {
+
+    /* Rules Page*/
+    ol {
+        font-size: 35px;
+    }
+
+    #rules h1 {
+        width: 90%;
+    }
+
+    /*Main page*/
+    h3 {
+        font-size: 35px;
+    }
+
+    p {
+        font-size: 40px;
+    }
+
+    #question-frame {
+        width: 80%;
+    }
+
+    .question-container {
+        margin: 2% 0 0 15%;
+        width: 100%;
+    }
+
+    .quest-box h3 {
+        font-weight: 200;
+        font-size: 38px;
+        width: 300px;
+    }
+
+    .ans-btn {
+        width: 100%;
+        font-size: 30px;
+    }
+
+    .answer-buttons {
+        margin: 0 110px 0 0;
+        width: 60%;
+    }
+
+    #submit {
+        margin-top: 9rem;
+        left: 33%;
+        width: 50%;
+    }
+
+    #results {
+        margin-left: 25%;
+        width: 65%;
+    }
+
+    #results h1 {
+        width: 75%
+    } 

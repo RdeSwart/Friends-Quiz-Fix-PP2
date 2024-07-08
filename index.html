@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/images/icons8-photo-frame-50.png">
+    <!--SEO Meta Tags-->
+    <meta name="description" content="Ultimate Friends Quiz | Are you a Friends fantatic?">
+    <meta name="keywords" content="quiz, Friends sitcom, game, fandom,play">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!--Google Fonts link-->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap');
+    </style>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>F&middot;R&middot;I&middot;E&middot;N&middot;D&middot;S Quiz</title>
+</head>
+
+<body id="mainPage">
+    <header>
+        <h1>The Ultimate F<span class="red-dot">&middot;</span>R<span class="aqua-dot">&middot;</span>I<span
+                class="gold-dot">&middot;</span>E<span class="red-dot">&middot;</span>N<span
+                class="gold-dot">&middot;</span>D<span class="aqua-dot">&middot;</span>S Quiz</h1>
+    </header>
+    <main>
+        <!--Rules Page that will show on first load and not display anymore when "Begin Quiz" button is pressed-->
+        <div id="rules">
+            <h1>Instructions for the F<span class="red-dot">&middot;</span>R<span class="aqua-dot">&middot;</span>I<span
+                    class="gold-dot">&middot;</span>E<span class="red-dot">&middot;</span>N<span
+                    class="gold-dot">&middot;</span>D<span class="aqua-dot">&middot;</span>S Quiz</h1>
+            <ol>
+                <li>There are four possible answers to the question - choose the correct one!</li>
+                <li>You can keep tabs of your score at the bottom of the screen</li>
+                <li>Click on the "Next" button to go the next question</li>
+                <li>Don't get <strong>Bamboozled!</strong></li>
+                <li>Good Luck!</li>
+            </ol>
+            <div id="quizBegin">
+                <p>When you're ready, click Begin Quiz</p>
+                <button id="rulesOk">Begin Quiz</button>
+            </div>
+        </div>
+        <!--Quiz Page-->
+        <h2>Can you prove you are the Ultimate Friends Fan?</h2>
+        <p>Try the quiz below to find out if you could "Beeee anymore of a fanatic?"</p>
+        <div class="question-container">
+            <img src="assets/images/friends-frame.png" alt="Friends photo frame" id="question-frame">
+            <div class="quest-box">
+                <h3 id="question">Questions go here</h3>
+
+            </div>
+
+            <div class="answer-buttons">
+                <button class="ans-btn">Answer 1</button>
+                <button class="ans-btn">Answer 2</button>
+                <button class="ans-btn">Answer 3</button>
+                <button class="ans-btn">Answer 4</button>
+
+            </div>
+
+        </div>
+        <div class="next-btn">
+            <button id="submit" type="submit">N<span class="red-dot">&middot;</span>E<span
+                    class="aqua-dot">&middot;</span>X<span class="gold-dot">&middot;</span>T</button>
+        </div>
+        <div id="results">Score:
+            <p id="numScore"><span id="user-score">0</span>
+                /10</p>
+        </div>
+        <div id="themeTune">
+            <figure>
+                <figcaption>Play the theme tune here:</figcaption>
+
+
+                <audio controls src="assets/audio/Friends.mp3" id="audio">
+                    This browser does not support the audio tag
+                </audio>
+            </figure>
+        </div>
+    </main>
+    <footer>Friends Quiz 2024</footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
