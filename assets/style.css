@@ -133,19 +133,19 @@ p {
 }
 
 #question-frame {
-    width: 98%;
+    width: 80%;
+    position: relative;
     height: 416px;
 }
 
 /* Styling for the frame question box */
 .quest-box h3 {
-    width: 60%;
-    margin: 5px auto;
-    font-size: 19px;
-    font-weight: 200;
     position: absolute;
-    top: 21.2rem;
-    left: 3.2rem;
+    top: 273px;
+    left: 101px;
+    font-size: 21px;
+    width: 147px;
+    font-weight: 200;
 }
 
 .quest-box {
@@ -162,7 +162,7 @@ p {
     align-content: center;
     flex-wrap: wrap;
     position: relative;
-    width: 75%;
+    width: 60%;
     bottom: 216px;
 }
 
@@ -176,7 +176,7 @@ p {
     transition: all 0.2s;
     margin: 2px;
     font-family: 'Covered By Your Grace', sans-serif;
-    font-size: .5em;
+    font-size: 18px;
     /* Cursor style emoji fromEmoji Cursor app*/
     cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='36' height='43' viewport='0 0 100 100' style='fill:black;font-size:22px;'><text y='50%'>☕</text></svg>") 16 0, auto;
     /*!emojicursor.app*/
@@ -197,14 +197,14 @@ p {
 /* Next Button*/
 .next-btn {
     position: absolute;
-    top: 678px;
     display: flex;
     margin: 0 auto;
-    left: 25%;
+    top: 595px;
+    left: 30%;
 }
 
 #submit {
-    width: 8rem;
+    width: 9rem;
     padding: 0.75rem;
     border-radius: 5px;
     background: #000000;
@@ -214,7 +214,7 @@ p {
     left: 33%;
     border: 2px solid #ffff00;
     font-family: 'Covered By Your Grace', sans-serif;
-    font-size: .5em;
+    font-size: 25px;
     cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='36' height='43' viewport='0 0 100 100' style='fill:black;font-size:22px;'><text y='50%'>☕</text></svg>") 16 0, auto;
     /*!emojicursor.app*/
 
@@ -226,6 +226,8 @@ p {
     width: 100%;
     border: 2px solid #000000;
     background: #ffff00c9;
+    margin-left: 20%;
+    width: 65%;
 }
 
 figcaption {
@@ -244,7 +246,7 @@ audio {
 }
 
 #numScore {
-    font-size: 1em;
+    font-size: 35px;
 }
 
 footer {
@@ -261,17 +263,15 @@ footer {
 
 /*Media Queries*/
 
-/*For phones 280px and up*/
-@media screen and (min-width: 280px) {
+/*For phones 380px and up*/
+@media screen and (min-width: 380px) {
 
     .quest-box h3 {
-        width: 59%;
-        top: 21.2rem;
-        left: 3.55rem;
-    }
+    left: 121px;
+}
 }
 
-@media screen and (min-width: 293px) {
+/*@media screen and (min-width: 293px) {
     .quest-box h3 {
         top: 19.2rem;
     }
@@ -306,10 +306,10 @@ footer {
         top: 276px;
         left: 84px;
     }
-}
+} */
 
 /*For larger phones and landscape mode (540px and up)*/
-
+/* 
 @media screen and (min-width: 540px) {
 
     p {
@@ -349,42 +349,43 @@ footer {
         left: 32px;
         width: 59%;
     }
+
     .next-btn {
         top: 686px;
         left: 38%;
     }
 
-.quest-box h3 {
-    top: 335px;
-    left: 108px;
-    font-size: 1.5rem;
-}
+    .quest-box h3 {
+        top: 335px;
+        left: 108px;
+        font-size: 1.5rem;
+    }
 
-#results {
-    font-size: 35px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 0 auto;
-    width: 100%;
-}
+    #results {
+        font-size: 35px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+        width: 100%;
+    }
 
-#numScore {
-    font-size: 30px;
-}
+    #numScore {
+        font-size: 30px;
+    }
 
-figcaption {
-    font-size: 35px;
-}
+    figcaption {
+        font-size: 35px;
+    }
 
-audio {
-    height: 25px;
-    width: 100%;
-    margin: 5px auto;
-    width: 100%;
-}
+    audio {
+        height: 25px;
+        width: 100%;
+        margin: 5px auto;
+        width: 100%;
+    }
 
-}
+} */
 
 
 
@@ -392,59 +393,59 @@ audio {
 /* @media screen and (min-width: 768px) {
 
     /* Rules Page*/
-    ol {
-        font-size: 35px;
-    }
+/* ol {
+    font-size: 35px;
+}
 
-    #rules h1 {
-        width: 90%;
-    }
+#rules h1 {
+    width: 90%;
+} */
 
-    /*Main page*/
-    h3 {
-        font-size: 35px;
-    }
+/*Main page*/
+/* h3 {
+    font-size: 35px;
+}
 
-    p {
-        font-size: 40px;
-    }
+p {
+    font-size: 40px;
+}
 
-    #question-frame {
-        width: 80%;
-    }
+#question-frame {
+    width: 80%;
+}
 
-    .question-container {
-        margin: 2% 0 0 15%;
-        width: 100%;
-    }
+.question-container {
+    margin: 2% 0 0 15%;
+    width: 100%;
+}
 
-    .quest-box h3 {
-        font-weight: 200;
-        font-size: 38px;
-        width: 300px;
-    }
+.quest-box h3 {
+    font-weight: 200;
+    font-size: 38px;
+    width: 300px;
+}
 
-    .ans-btn {
-        width: 100%;
-        font-size: 30px;
-    }
+.ans-btn {
+    width: 100%;
+    font-size: 30px;
+}
 
-    .answer-buttons {
-        margin: 0 110px 0 0;
-        width: 60%;
-    }
+.answer-buttons {
+    margin: 0 110px 0 0;
+    width: 60%;
+}
 
-    #submit {
-        margin-top: 9rem;
-        left: 33%;
-        width: 50%;
-    }
+#submit {
+    margin-top: 9rem;
+    left: 33%;
+    width: 50%;
+}
 
-    #results {
-        margin-left: 25%;
-        width: 65%;
-    }
+#results {
+    margin-left: 25%;
+    width: 65%;
+}
 
-    #results h1 {
-        width: 75%
-    } 
+#results h1 {
+    width: 75%
+} */
