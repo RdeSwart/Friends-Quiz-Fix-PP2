@@ -188,7 +188,7 @@ function startQuiz() {
                 }
 
             }
-            resultContainer.innerHTML = `<p>Your score: ${score}/${questions.length}</p>`;
+            resultContainer.innerHTML = `<p class="js-score">Your score: ${score}/${questions.length}</p>`;
 
         });
 
