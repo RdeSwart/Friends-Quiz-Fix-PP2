@@ -271,7 +271,7 @@ footer {
 
     .quest-box h3 {
         left: 33%;
-        top: 14em;
+        top: 13.3em;
     }
 
     .next-btn {
@@ -298,57 +298,7 @@ footer {
     }
 }
 
-/* @media screen and (min-width: 768px) { */
-
-/*  Rules page */
-/* .instructions {
-        font-size: 3rem;
-    }
-
-    ol {
-        font-size: 1em;
-    }
-
-    #quizBegin p {
-        font-size: 1em;
-    } */
-
-/* Main Page */
-/*     
-    #question-frame {
-        width: 57%;
-        height: 454px;
-    }
-
-    .quest-box h3 {
-        left: 39%; changed this one!!!!!!!!!!!!!!!!!!!
-        top: 11em; changed this one!!!!!!!!!!!!!!!!!!!
-        font-size: 25px;
-    }
-
-    .answer-buttons {
-        width: 38%;
-        bottom: 225px;
-    }
-
-    .next-btn {
-        top: 22em; changed this one!!!!!!!!!!!!!!!!!!!
-        left: 40%; changed this one!!!!!!!!!!!!!!!!!!!
-    }
-
-    #results {
-        margin: 113px auto; changed this one!!!!!!!!!!!!!!!!!!!
-    }
-
-    #numScore {
-        font-size: 1em;
-    }
-
-    .js-score {
-        font-size: 1em;
-    }
-} */
-
+/* For screens 768px and up */
 @media screen and (min-width: 768px) {
 
     /*  Rules page */
@@ -381,7 +331,7 @@ footer {
 
     #question-frame {
         width: 50%;
-        height: 655px;
+        height: 14em;
     }
 
     .quest-box h3 {
@@ -430,6 +380,8 @@ footer {
     }
 }
 
+/* For desktop screens 1024px and up */
+
 @media screen and (min-width: 1024px) {
 
     /*  Rules page */
@@ -474,6 +426,7 @@ footer {
 }
 
 /* For extra large screens and Tvs */
+
 @media screen and (min-width: 1201px) {
     #question-frame {
         width: 46%;
